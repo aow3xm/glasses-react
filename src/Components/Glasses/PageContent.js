@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import ModelCard from "./ModelCard";
-import Image from "./glassesImage/model.jpg";
 import SelectGlasses from "./SelectGlasses";
 
+const Image = "/glassesImage/model.jpg"; // Sửa ở đây
 export default class PageContent extends Component {
   handleChangeGlass = (glass) => {
     this.setState({
@@ -14,7 +14,7 @@ export default class PageContent extends Component {
       id: 1,
       price: 30,
       name: "GUCCI G8850U",
-      url: "./glassesImage/v1.png",
+      url: "/glassesImage/v1.png", // Và sửa ở đây
       desc: "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     },
   };
